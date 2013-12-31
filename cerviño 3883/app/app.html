@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Cerviño 3883</title>
+
+    <!-- Sets initial viewport load and disables zooming  -->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!-- Set a shorter title for iOS6 devices when saved to home screen -->
+    <meta name="apple-mobile-web-app-title" content="Cerviño 3883">
+
+    <!-- Set Android icons for when prototype is saved to home screen -->
+    <link rel="shortcut icon" sizes="196x196" href="touch-icons/android-touch-icon-196x196.png">
+    <link rel="shortcut icon" sizes="128x128" href="touch-icons/android-touch-icon-128x128.png">
+
+    <!-- Set Apple icons for when prototype is saved to home screen -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="touch-icons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="touch-icons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="touch-icons/apple-touch-icon-57x57.png">
+
+    <!-- Include the compiled Ratchet CSS -->
+    <link rel="stylesheet" href="css/ratchet.css">
+
+    <!-- Include Font Icons CSS -->
+    <link rel="stylesheet" href="css/iconos-edificios.css">
+
+    <!-- Include App CSS -->
+    <link rel="stylesheet" href="css/edificios.css">
+
+    <!-- Include the compiled Ratchet JS -->
+    <script src="js/ratchet.js"></script>
+
+    <!-- Include the App JS -->
+    <script src="js/edificios.js"></script>
+
+    <!-- Include Mobile Detection -->
+    <script src="js/detectmobilebrowser.js"></script>
+
+  </head>
+  <body>
+
+  <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
+  <div class="content">
+    <div class="ml-icon-list">
+      <a href="#lights" class="icon-light-bulb">Luces</a>
+      <a href="#locks" class="icon-key">Cerraduras</a>
+      <a href="#a_c" class="icon-air-conditioner">A/C</a>
+      <a href="#curtains" class="icon-curtains">Cortinas</a>
+      <a href="#security-cameras" class="icon-security-camera">Cámaras</a>
+      <a href="#energy" class="icon-chart">Consumo</a>
+      <a href="#settings" class="icon-cogs">Opciones</a>
+      <a href="index.html" class="icon-logout">Salir</a>
+    </div>
+
+    <div id="lights" class="modal">
+      <header class="bar-title">
+        <h1 class="title">Luces</h1>
+        <a class="button" href="#lights">
+          Volver
+        </a>
+      </header>
+
+      <div class="content content-padded">
+        <ul class="list">
+          <li>Dormitorio
+            <div class="toggle active">
+              <div class="toggle-handle"></div>
+            </div>
+          </li>
+          <li>Living
+            <div class="toggle">
+              <div class="toggle-handle"></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="locks" class="modal">
+      <header class="bar-title">
+        <h1 class="title">Cerraduras</h1>
+        <a class="button" href="#locks">
+          Volver
+        </a>
+      </header>
+
+      <div class="content content-padded">
+        <ul class="list">
+          <li>Calle
+            <div class="btn-container">
+              <div class="toggle-between">
+                <a class="button-positive active">Abrir</a>
+                <a class="button-negative">Cerrar</a>
+              </div>
+              <a class="button">Códigos</a>
+            </div>
+          </li>
+          <li>Departamento
+            <div class="btn-container">
+              <div class="toggle-between">
+                <a class="button-positive">Abrir</a>
+                <a class="button-negative active">Cerrar</a>
+              </div>
+              <a class="button">Códigos</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="a_c" class="modal">
+      <header class="bar-title">
+        <h1 class="title">A/C</h1>
+        <a class="button" href="#a_c">
+          Volver
+        </a>
+      </header>
+
+      <div class="content content-padded">
+        <ul class="list">
+          <li>Dormitorio
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="curtains" class="modal">
+      <header class="bar-title">
+        <h1 class="title">Cortinas</h1>
+        <a class="button" href="#curtains">
+          Volver
+        </a>
+      </header>
+
+      <div class="content content-padded">
+        <ul class="list">
+          <li>Living
+            <div class="toggle-between">
+              <a class="button-positive active">Subir</a>
+              <a class="button-negative">Bajar</a>
+            </div>
+          </li>
+          <li>Dormitorio
+            <div class="toggle-between">
+              <a class="button-positive active">Subir</a>
+              <a class="button-negative">Bajar</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="security-cameras" class="modal">
+      <header class="bar-title">
+        <h1 class="title">Cámaras</h1>
+        <a class="button" href="#security-cameras">
+          Volver
+        </a>
+      </header>
+
+      <div class="content content-padded">
+        <ul class="list">
+          <li>Entrada Edificio
+            <span class="chevron"></span>
+          </li>
+          <li>Palier
+            <span class="chevron"></span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="energy" class="modal">
+      <header class="bar-title">
+        <h1 class="title">Consumo</h1>
+        <a class="button" href="#energy">
+          Volver
+        </a>
+      </header>
+
+      <div class="content content-padded">
+        <p>GRAFICO ACA</p>
+      </div>
+    </div>
+
+    <div id="settings" class="modal">
+      <header class="bar-title">
+        <h1 class="title">Opciones</h1>
+        <a class="button" href="#settings">
+          Volver
+        </a>
+      </header>
+
+      <div class="content content-padded">
+        <form>
+          <div class="input-group">
+            <input type="password" placeholder="Contraseña" name="password">
+            <input type="password" placeholder="Nueva Contraseña" name="new-password">
+            <input type="password" placeholder="Confirmar Nueva Contraseña" name="confirm-new-password">
+          </div>
+          <a class="button button-block">Confirmar</a>
+          <a class="button-negative button-block" href="#settings">Cancelar</a>
+        </form>
+      </div>
+    </div>
+
+  </div>
+
+
+    <script type="text/javascript">
+      if(!window.mobile) {
+        document.write('<scri' + 'pt src="js/fingerblast.js"></scr' + 'ipt>')
+      }
+    </script>
+    <script type="text/javascript">
+      if(window.FingerBlast) fingerblast = new FingerBlast(document.body);
+    </script>
+  </body>
+</html>

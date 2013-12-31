@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Cerviño 3883</title>
+
+    <!-- Sets initial viewport load and disables zooming  -->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+
+    <!-- Set a shorter title for iOS6 devices when saved to home screen -->
+    <meta name="apple-mobile-web-app-title" content="Cerviño 3883">
+
+    <!-- Set Android icons for when prototype is saved to home screen -->
+    <link rel="shortcut icon" sizes="196x196" href="touch-icons/android-touch-icon-196x196.png">
+    <link rel="shortcut icon" sizes="128x128" href="touch-icons/android-touch-icon-128x128.png">
+
+    <!-- Set Apple icons for when prototype is saved to home screen -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="touch-icons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="touch-icons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="touch-icons/apple-touch-icon-57x57.png">
+
+    <!-- Include the compiled Ratchet CSS -->
+    <link rel="stylesheet" href="css/ratchet.css">
+
+    <!-- Include Font Icons CSS -->
+    <link rel="stylesheet" href="css/iconos-edificios.css">
+
+    <!-- Include App CSS -->
+    <link rel="stylesheet" href="css/edificios.css">
+
+    <!-- Include the compiled Ratchet JS -->
+    <script src="js/ratchet.js"></script>
+
+    <!-- Include the App JS -->
+    <script src="js/edificios.js"></script>
+
+    <!-- Include Mobile Detection -->
+    <script src="js/detectmobilebrowser.js"></script>
+  </head>
+  <body>
+
+  <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
+  <div class="content">
+    <div class="login">
+      <h1>Cerviño 3883</h1>
+      <form>
+        <div class="input-group">
+          <input type="text" placeholder="Usuario">
+          <input type="password" placeholder="Contraseña">
+        </div>
+        <a class="button button-block" href="app.html">Ingresar</a>
+      </form>
+    </div>
+  </div>
+
+
+    <script type="text/javascript">
+      if(!window.mobile) {
+        document.write('<scri' + 'pt src="js/fingerblast.js"></scr' + 'ipt>')
+      }
+    </script>
+    <script type="text/javascript">
+      if(window.FingerBlast) fingerblast = new FingerBlast(document.body);
+    </script>
+  </body>
+</html>

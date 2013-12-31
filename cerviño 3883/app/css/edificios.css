@@ -1,0 +1,63 @@
+.btn-container {
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: auto;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  left: auto;
+  margin-top: -14px;
+}
+.btn-container [class*="button"] {
+  position: relative;
+  margin: 0;
+  float: none;
+  right: auto;
+  left: auto;
+}
+.ml-icon-list {
+  text-align: center;
+  font-size: 1em;
+}
+.ml-icon-list a {
+  display: inline-block;
+  min-width: 64px;
+  max-width: 5em;
+  max-height: 3em;
+  min-height: 64px;
+  padding: 0.6em;
+  text-align: center;
+  border-radius: 15px;
+  border: 2px solid #0882f0;
+  margin: 4px;
+}
+.ml-icon-list a:before {
+  font-size: 4em;
+  display: block;
+  margin: auto;
+}
+.toggle-between {
+  display: inline-block;
+}
+.toggle-between * {
+  display: none;
+}
+.toggle-between .active {
+  display: inline-block;
+}
+.login {
+  height: 100%;
+  padding: 0.5em;
+  background-color: #0882f0;
+}
+.login h1 {
+  color: white;
+  font-family: sans-serif;
+  font-weight: normal;
+  font-size: 3em;
+}
+.login .button {
+  background-image: none;
+  background: white;
+}
